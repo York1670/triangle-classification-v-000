@@ -20,11 +20,12 @@ class Triangle
       return isosceles
     elsif @hyp != @opp && @hyp != @adj && @opp != @adj
       return scalene
-  end
-
-  class TriangleError < StandardError
-    def message
-      return "Not a valid triangle"
     end
+  end
+end
+
+class TriangleError < StandardError
+  def message
+    return "Not a valid triangle"
   end
 end

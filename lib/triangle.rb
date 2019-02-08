@@ -8,19 +8,7 @@ class Triangle
   end
 
   def kind
-    if @hyp <= 0 || @opp <= 0 || @adj <= 0
-      return TriangleError
-    elsif @hyp + @opp < @adj || @hyp + @adj < @opp || @adj + @opp < @hyp
-      return TriangleError
-    else @hyp == @opp && @opp == @adj
-      :equilateral
-    elsif @opp == @adj && @opp != @hyp
-      :isosceles
-    elsif @hyp != @opp && @hyp != @adj && @opp != @adj
-      :scalene
-    end
   end
-end
 
 class TriangleError < StandardError
   def message

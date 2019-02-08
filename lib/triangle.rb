@@ -15,11 +15,11 @@ class Triangle
     end
 
     if @hyp == @opp && @opp == @adj
-      return equilateral
+      :equilateral
     elsif @opp == @adj && @opp != @hyp || @opp == @adj && @adj != @hyp
-      return isosceles
+      :isosceles
     elsif @hyp != @opp && @hyp != @adj && @opp != @adj
-      return scalene
+      :scalene
     end
   end
 end

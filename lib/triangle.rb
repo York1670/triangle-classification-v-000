@@ -14,7 +14,7 @@ class Triangle
       return TriangleError
     end
 
-    if @hyp == @opp && @hyp == @adj && @opp == @adj
+    if @hyp == @opp && @opp == @adj
       :equilateral
     elsif @opp == @adj && @opp != @hyp || @opp == @adj && @adj != @hyp
       :isosceles

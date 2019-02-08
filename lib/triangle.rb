@@ -8,6 +8,9 @@ class Triangle
   end
 
   def kind
+    if @hyp == @opp && @opp == @adj
+      :equilateral
+    end
   end
 end
 

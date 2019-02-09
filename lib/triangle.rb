@@ -14,7 +14,7 @@ class Triangle
       :isosceles
     elsif @hyp != @opp && @opp != @adj && @hyp != @adj
       :scalene
-    elsif @hyp == 0 || @opp == 0 || @adj == 0
+    elsif @hyp == 0 && @opp == 0 && @adj == 0
       return TriangleError
     end
   end

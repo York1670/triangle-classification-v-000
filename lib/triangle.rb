@@ -12,6 +12,7 @@ class Triangle
       :equilateral
     elsif @hyp == @opp || @opp == @adj || @hyp == @adj
       :isosceles
+    elsif @hyp != @opp && @opp != @adj && @hyp != @adj
     end
   end
 end

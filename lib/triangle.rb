@@ -10,6 +10,7 @@ class Triangle
   def kind()
     if @hyp == @opp && @opp == @adj
       :equilateral
+    elsif @opp == @app || @opp == @hyp || @app == @hyp
     end
   end
 end

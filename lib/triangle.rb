@@ -7,7 +7,7 @@ class Triangle
     @adj = adj
   end
 
-  def kind()
+  def kind
 
     if @hyp <= 0 || @opp <= 0 || @adj <= 0
       return TriangleError

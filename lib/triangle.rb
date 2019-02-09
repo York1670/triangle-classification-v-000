@@ -9,7 +9,7 @@ class Triangle
 
   def kind()
 
-    if @hyp <= 0 && @opp <= 0 && @adj <= 0
+    if @hyp <= 0 || @opp <= 0 || @adj <= 0
       return TriangleError
     elsif @hyp == @opp && @opp == @adj
       :equilateral

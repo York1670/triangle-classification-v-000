@@ -7,7 +7,7 @@ class Triangle
     @adj = adj
   end
 
-  def kind(hyp, opp, adj)
+  def kind
     if @hyp == @opp && @opp == @adj
       :equilateral
     end

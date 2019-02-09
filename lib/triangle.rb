@@ -15,6 +15,10 @@ class Triangle
     elsif @hyp != @opp && @opp != @adj && @hyp != @adj
       :scalene
     end
+
+    if @hyp <= 0 || @opp <= 0 || @adj <= 0
+      return TriangleError
+    end
   end
 end
 

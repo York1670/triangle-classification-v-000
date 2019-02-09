@@ -13,6 +13,7 @@ class Triangle
     elsif @hyp == @opp || @opp == @adj || @hyp == @adj
       :isosceles
     elsif @hyp != @opp && @opp != @adj && @hyp != @adj
+      :scalene
     end
   end
 end

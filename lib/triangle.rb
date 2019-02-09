@@ -11,6 +11,7 @@ class Triangle
 
     if @hyp <= 0 || @opp <= 0 || @adj <= 0
       raise TriangleError
+    elsif @hyp + @opp <= @adj || @opp + @adj <= @hyp || @hyp + @adj <= @opp
     elsif @hyp == @opp && @opp == @adj
       :equilateral
     elsif @hyp == @opp || @opp == @adj || @hyp == @adj
